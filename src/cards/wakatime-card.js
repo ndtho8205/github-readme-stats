@@ -223,7 +223,7 @@ const renderWakatimeCard = (stats = {}, options = { hide: [] }) => {
   card.setCSS(
     `
     ${cssStyles}
-    .lang-name { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${textColor} }
+    .lang-name { font: 400 11px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; fill: ${textColor} }
     `,
   );
 

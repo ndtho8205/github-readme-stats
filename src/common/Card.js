@@ -122,7 +122,7 @@ class Card {
       >
         <style>
           .header {
-            font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+            font: 600 18px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
             fill: ${this.colors.titleColor};
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }

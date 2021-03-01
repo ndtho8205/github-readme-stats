@@ -130,10 +130,10 @@ const renderRepoCard = (repo, options = {}) => {
   card.setHideBorder(hide_border);
   card.setHideTitle(false);
   card.setCSS(`
-    .description { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${textColor} }
-    .gray { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${textColor} }
+    .description { font: 400 13px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; fill: ${textColor} }
+    .gray { font: 400 12px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; fill: ${textColor} }
     .icon { fill: ${iconColor} }
-    .badge { font: 600 11px 'Segoe UI', Ubuntu, Sans-Serif; }
+    .badge { font: 600 11px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; }
     .badge rect { opacity: 0.2 }
   `);
 

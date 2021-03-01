@@ -9,7 +9,7 @@ const calculateCircleProgress = (value) => {
   return percentage;
 };
 
-const getProgressAnimation = ({ progress }) => {
+const getProgressAnimation = ({progress}) => {
   return `
     @keyframes rankAnimation {
       from {
@@ -53,8 +53,7 @@ const getStyles = ({
 }) => {
   return `
     .stat {
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      font-size: 14px;
+      font: 400 14px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, ;
       fill: ${textColor};
 
     }
@@ -63,9 +62,7 @@ const getStyles = ({
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      font-size: 24px;
-      font-weight: 800;
+      font: 800 24px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
       fill: ${textColor};
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
@@ -93,8 +90,8 @@ const getStyles = ({
       transform: rotate(-90deg);
       animation: rankAnimation 1s forwards ease-in-out;
     }
-    ${process.env.NODE_ENV === "test" ? "" : getProgressAnimation({ progress })}
+    ${process.env.NODE_ENV === "test" ? "" : getProgressAnimation({progress})}
   `;
 };
 
-module.exports = { getStyles, getAnimations };
+module.exports = {getStyles, getAnimations};

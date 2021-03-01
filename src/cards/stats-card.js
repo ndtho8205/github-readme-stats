@@ -36,7 +36,7 @@ const createTextNode = ({
       ${iconSvg}
       <text class="stat" ${labelOffset} y="12.5">${label}:</text>
       <text 
-        class="stat" 
+        class="stat bold"
         x="${(showIcons ? 140 : 120) + shiftValuePos}" 
         y="12.5" 
         data-testid="${id}"
