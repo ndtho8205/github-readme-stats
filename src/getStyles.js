@@ -9,7 +9,7 @@ const calculateCircleProgress = (value) => {
   return percentage;
 };
 
-const getProgressAnimation = ({progress}) => {
+const getProgressAnimation = ({ progress }) => {
   return `
     @keyframes rankAnimation {
       from {
@@ -53,7 +53,7 @@ const getStyles = ({
 }) => {
   return `
     .stat {
-      font: 400 14px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, ;
+      font: 400 14px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
       fill: ${textColor};
 
     }
@@ -90,8 +90,8 @@ const getStyles = ({
       transform: rotate(-90deg);
       animation: rankAnimation 1s forwards ease-in-out;
     }
-    ${process.env.NODE_ENV === "test" ? "" : getProgressAnimation({progress})}
+    ${process.env.NODE_ENV === "test" ? "" : getProgressAnimation({ progress })}
   `;
 };
 
-module.exports = {getStyles, getAnimations};
+module.exports = { getStyles, getAnimations };
